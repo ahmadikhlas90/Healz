@@ -88,3 +88,4 @@ C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\U
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\User\ProfileSettings.cshtml.g.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\User\securitysettings.cshtml.g.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\User\upgradepackage.cshtml.g.cs
+C:\Users\user\Documents\MHealz\Healz\Healz\bin\Debug\netcoreapp2.2\libman.json

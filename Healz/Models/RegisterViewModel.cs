@@ -17,9 +17,7 @@ namespace Healz.Models
         [Required]
 
         [EmailAddress]
-        //[Remote(action: "IsEmailInUse", controller: "Account")]
-        //[ValidEmailDomain(allowedDomain: "awsik.com",
-        //ErrorMessage = "Email domain must be awsik.com")]
+        [Remote(action: "IsEmailInUse", controller: "Account")]
         public string Email { get; set; }
 
         [Required]
@@ -32,6 +30,5 @@ namespace Healz.Models
             ErrorMessage = "Password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        public string  City { get; set; }
     }
 }
