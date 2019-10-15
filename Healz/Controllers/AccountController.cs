@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Healz.Controllers
 {
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;

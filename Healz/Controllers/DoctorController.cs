@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Healz.Controllers
 {
-  
-    //[Authorize(Roles ="Doctor")]
+    [Authorize(Policy = "DoctorRolePolicy")]
     public class DoctorController : Controller
     {
        

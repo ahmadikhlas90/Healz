@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="~/css/normalize.css">
     <link rel="stylesheet" href="~/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/jquery.countdown.css">
@@ -30,6 +31,12 @@
     <link rel="stylesheet" href="~/css/color.css">
     <link rel="stylesheet" href="~/css/responsive.css">
     <script src="~/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+    <link rel="stylesheet" href="~/css/bootstraps.css">
+    <link href="~/css/bootstraps-reboot.css" rel="stylesheet" />
+    <link href="~/css/sites.css" rel="stylesheet" />
+    <link href="~/css/bootstraps-grid.css" rel="stylesheet" />
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
@@ -82,6 +89,21 @@
 
                                         <li><a asp-action="Index" asp-controller="Home">Home</a></li>
                                         <li>@Html.ActionLink("About", "About", "Home", "") </li>
+                                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin") || User.IsInRole("Super Admin"))
+                                        {
+                                            <li class="nav-item">
+                                                <a asp-action="ListRoles" asp-controller="Administration" class="nav-link">Manage Roles</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a asp-action="ListUsers" asp-controller="Administration" class="nav-link">Manage Users</a>
+                                            </li>
+                                        }
+                                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Doctor"))
+                                        {
+                                            <li class="nav-item">
+                                                <a asp-action="Insights" asp-controller="Doctor" class="nav-link">Doctor Portal</a>
+                                            </li>
+                                        }
                                         <li><a asp-action="HowItWorks" asp-controller="Home">How It Works?</a></li>
                                         <li class="tg-hasdropdown">
                                             <a href="javascript:void(0);">
@@ -90,12 +112,12 @@
                                             </a>
                                             <ul class="tg-dropdownmenu">
                                                 @*<li><a href="blogpostlist.html">Blog List</a></li>
-                                                    <li><a href="blogpostgrid.html">Blog Grid</a></li>
-                                                    <li><a href="blogpostdetail.html">Blog Detail</a></li>
-                                                    <li><a href="doctor-overview-detail.html">Doctor Detail</a></li>
-                                                    <li><a href="404.html">404</a></li>
-                                                    <li><a href="commingsoon.html">Comming Soon</a></li>
-                                                    <li><a href="signin-signup.html">Signin-Signup</a></li>*@
+                <li><a href="blogpostgrid.html">Blog Grid</a></li>
+                <li><a href="blogpostdetail.html">Blog Detail</a></li>
+                <li><a href="doctor-overview-detail.html">Doctor Detail</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="commingsoon.html">Comming Soon</a></li>
+                <li><a href="signin-signup.html">Signin-Signup</a></li>*@
 
                                                 <li><a href="@Url.Action("blogpostlist","Home")">Blog List</a></li>
                                                 <li><a href="@Url.Action("blogpostgrid","Home")">Blog Grid</a></li>

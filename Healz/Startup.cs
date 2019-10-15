@@ -50,13 +50,13 @@ namespace Healz
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<AppDbContext>();
-            //services.AddMvc(config =>
-            //{
-            //    var policy = new AuthorizationPolicyBuilder()
-            //                    .RequireAuthenticatedUser()
-            //                    .Build();
-            //    config.Filters.Add(new AuthorizeFilter(policy));
-            //});
+            services.AddMvc(config =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                                .RequireAuthenticatedUser()
+                                .Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
 
             services.ConfigureApplicationCookie(options =>
             {
@@ -64,12 +64,20 @@ namespace Healz
             });
             services.AddAuthorization(options =>
             {
+                //options.AddPolicy("EditRolePolicy", policy => policy
+                //     .RequireRole("Admin")
+                //     .RequireClaim("Edit Role", "true")                          //   video 99
+                //     .RequireRole("Super Admin")
+                // );
+                //options.AddPolicy("EditRolePolicy", policy =>
+                //      policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement()));
                 options.AddPolicy("DeleteRolePolicy",
                     policy => policy.RequireClaim("Delete Role").RequireClaim("Create Role"));
-               
-                options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role","true"));//part 96
+
+                options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role", "true"));//part 96
 
                 options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin")); //part 95
+                options.AddPolicy("DoctorRolePolicy", policy => policy.RequireRole("Doctor")); //part 95
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

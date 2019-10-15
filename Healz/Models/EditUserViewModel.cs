@@ -10,7 +10,7 @@ namespace Healz.Models
     {
         public EditUserViewModel()
         {
-            Claims = new List<string>();
+
             Roles = new List<string>();
         }
 
@@ -23,9 +23,9 @@ namespace Healz.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        public string City { get; set; }
+        public string FirsName { get; set; }
+        public string LastName { get; set; }
 
-        public List<string> Claims { get; set; }
 
         public IList<string> Roles { get; set; }
     }
