@@ -48,8 +48,20 @@ namespace Healz
                 options.Password.RequireNonAlphanumeric = false;
             });
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-            .AddEntityFrameworkStores<AppDbContext>();
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //.AddEntityFrameworkStores<AppDbContext>();
+
+
+            //custom
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+               //options => options.Stores.MaxLengthForKeys = 128)
+               .AddEntityFrameworkStores<AppDbContext>();
+               //.AddDefaultUI()
+               //.AddDefaultTokenProviders();
+
+
+
+
             services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder()
@@ -64,17 +76,15 @@ namespace Healz
             });
             services.AddAuthorization(options =>
             {
-                //options.AddPolicy("EditRolePolicy", policy => policy
-                //     .RequireRole("Admin")
-                //     .RequireClaim("Edit Role", "true")                          //   video 99
-                //     .RequireRole("Super Admin")
-                // );
-                //options.AddPolicy("EditRolePolicy", policy =>
-                //      policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement()));
+                options.AddPolicy("EditRolePolicy", policy => policy
+                     .RequireRole("Admin")
+                     .RequireClaim("Edit Role", "true")                          //   video 99
+                     .RequireRole("Super Admin")
+                 ); 
                 options.AddPolicy("DeleteRolePolicy",
                     policy => policy.RequireClaim("Delete Role").RequireClaim("Create Role"));
 
-                options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role", "true"));//part 96
+                //options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role", "true"));//part 96
 
                 options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin")); //part 95
                 options.AddPolicy("DoctorRolePolicy", policy => policy.RequireRole("Doctor")); //part 95
@@ -83,7 +93,10 @@ namespace Healz
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
+            AppDbContext context,
+            RoleManager<ApplicationRole> roleManager,
+            UserManager<ApplicationUser> userManager)
         {
             if (env.IsDevelopment())
             {
@@ -107,6 +120,7 @@ namespace Healz
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            DummyData.Initialize(context, userManager, roleManager).Wait();
         }
     }
 }

@@ -14,17 +14,17 @@ namespace Healz.Controllers
 {  //[Authorize(Policy ="AdminRolePolicy")]
    //[Authorize(Policy = "SuperAdminPolicy")]
    //[Authorize(Policy = "EditRolePolicy")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Super Admin")]
     //[Authorize(Roles ="Admin,User")]  <=both rules members allow both 
     //[Authorize(Roles ="User")]   <=Single Rule Member allow only single if we write both then those access who have member of both
     public class AdministrationController : Controller
     {
       
-            private readonly RoleManager<IdentityRole> roleManager;
+            private readonly RoleManager<ApplicationRole> roleManager;
             private readonly UserManager<ApplicationUser> userManager;
             private readonly ILogger<AdministrationController> logger;
 
-            public AdministrationController(RoleManager<IdentityRole> roleManager,
+            public AdministrationController(RoleManager<ApplicationRole> roleManager,
                 UserManager<ApplicationUser> userManager,
                 ILogger<AdministrationController> logger)
             {
@@ -50,9 +50,9 @@ namespace Healz.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    // We just need to specify a unique role name to create a new role
-                    IdentityRole identityRole = new IdentityRole
-                    {
+                // We just need to specify a unique role name to create a new role
+                ApplicationRole identityRole = new ApplicationRole
+                {
                         Name = model.RoleName
                     };
 
@@ -149,7 +149,7 @@ namespace Healz.Controllers
             }
 
             [HttpGet]
-            public async Task<IActionResult> EditUsersInRole(string roleId)
+        public async Task<IActionResult> EditUsersInRole(string roleId)
             {
                 ViewBag.roleId = roleId;
                 var role = await roleManager.FindByIdAsync(roleId);
@@ -180,7 +180,7 @@ namespace Healz.Controllers
             }
 
             [HttpPost]
-            public async Task<IActionResult> EditUsersInRole(List<UserRoleViewModel> model, string roleId)
+        public async Task<IActionResult> EditUsersInRole(List<UserRoleViewModel> model, string roleId)
             {
                 var role = await roleManager.FindByIdAsync(roleId);
 
@@ -369,7 +369,7 @@ namespace Healz.Controllers
             }
 
             [HttpGet]
-            [Authorize(Policy = "EditRolePolicy")]
+            //[Authorize(Policy = "EditRolePolicy")]
             public async Task<IActionResult> ManageUserRoles(string userId)
             {
                 ViewBag.userId = userId;
@@ -407,7 +407,7 @@ namespace Healz.Controllers
                 return View(model);
             }
             [HttpPost]
-            [Authorize(Policy = "EditRolePolicy")]
+            //[Authorize(Policy = "EditRolePolicy")]
             public async Task<IActionResult> ManageUserRoles(List<UserRolesViewModel> model, string userId)
             {
                 var user = await userManager.FindByIdAsync(userId);
