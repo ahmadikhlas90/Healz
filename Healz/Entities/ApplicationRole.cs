@@ -16,13 +16,11 @@ namespace Healz.Entities
         {
 
         }
-        public ApplicationRole( string roleName,string description,DateTime creationDate):base(roleName)
+        public ApplicationRole( string roleName,DateTime creationDate):base(roleName)
         {
-            this.Description = description;
             this.CreationDate = creationDate;
 
         }
-        public string Description { get; set; }
         public DateTime CreationDate { get; set; }
     }
 }
