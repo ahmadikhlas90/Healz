@@ -45,9 +45,7 @@ namespace Healz.Controllers
                     LastName=model.LastName,
                     Email = model.Email
                 };
-
                 var result = await userManager.CreateAsync(user, model.Password);
-
                 if (result.Succeeded)
                 {
                     // If the user is signed in and in the Admin role, then it is
@@ -57,17 +55,14 @@ namespace Healz.Controllers
                     {
                         return RedirectToAction("ListUsers", "Administration");
                     }
-
                     await signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("index", "home");
                 }
-
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
-
             return View(model);
         }
         [HttpPost]
@@ -77,22 +72,6 @@ namespace Healz.Controllers
             return RedirectToAction("index", "home");
         }
 
-
-        [AcceptVerbs("Get", "Post")]
-        [AllowAnonymous]
-        public async Task<IActionResult> IsEmailInUse(string email)
-        {
-            var user = await userManager.FindByEmailAsync(email);
-
-            if (user == null)
-            {
-                return Json(true);
-            }
-            else
-            {
-                return Json($"Email {email} is already in use.");
-            }
-        }
         [HttpPost]
         //[AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
@@ -119,5 +98,20 @@ namespace Healz.Controllers
             return View(model);
         }
 
+        [AcceptVerbs("Get", "Post")]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsEmailInUse(string email)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"Email {email} is already in use.");
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace Healz.Controllers
 {  //[Authorize(Policy ="AdminRolePolicy")]
    //[Authorize(Policy = "SuperAdminPolicy")]
    //[Authorize(Policy = "EditRolePolicy")]
-    [Authorize(Roles = "Admin,Super Admin")]
+    [Authorize(Roles = "Admin")]
     //[Authorize(Roles ="Admin,User")]  <=both rules members allow both 
     //[Authorize(Roles ="User")]   <=Single Rule Member allow only single if we write both then those access who have member of both
     public class AdministrationController : Controller

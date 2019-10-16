@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Healz.Controllers
 {
-    //[Authorize("User")]
+    [Authorize(Policy = "UserRolePolicy")]
     public class UserController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;

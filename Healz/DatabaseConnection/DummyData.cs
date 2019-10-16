@@ -17,7 +17,7 @@ namespace Healz.DatabaseConnection
             string adminId2 = "";
             string adminId3 = "";
 
-            string role1 = "Super Admin";
+            string role1 = "User";
             string role2 = "Admin";
             string role3 = "Doctor";
 
@@ -30,6 +30,10 @@ namespace Healz.DatabaseConnection
             if (await roleManager.FindByNameAsync(role2) == null)
             {
                 await roleManager.CreateAsync(new ApplicationRole(role2,  DateTime.Now));
+            }    
+            if (await roleManager.FindByNameAsync(role3) == null)
+            {
+                await roleManager.CreateAsync(new ApplicationRole(role3,  DateTime.Now));
             }
 
             if (await userManager.FindByNameAsync("user@gmail.com") == null)
@@ -95,6 +99,7 @@ namespace Healz.DatabaseConnection
                     await userManager.AddPasswordAsync(user, password);
                     await userManager.AddToRoleAsync(user, role3);
                 }
+                adminId3 = user.Id;
             }
 
             //if (await userManager.FindByNameAsync("dd@dd.dd") == null)

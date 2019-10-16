@@ -26,7 +26,7 @@
             </div>
             <div class="card-footer">
                 <form method="post" asp-action="DeleteRole" asp-route-id="@role.Id">
-                    @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
+                    @if (User.IsInRole("Admin") )
                     {
                         <a asp-controller="Administration" asp-action="EditRole"
                            asp-route-id="@role.Id" class="btn btn-primary">

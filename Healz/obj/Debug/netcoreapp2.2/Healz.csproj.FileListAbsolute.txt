@@ -9,7 +9,6 @@ C:\Users\user\Documents\MHealz\Healz\Healz\bin\Debug\netcoreapp2.2\Healz.dll
 C:\Users\user\Documents\MHealz\Healz\Healz\bin\Debug\netcoreapp2.2\Healz.pdb
 C:\Users\user\Documents\MHealz\Healz\Healz\bin\Debug\netcoreapp2.2\Healz.Views.dll
 C:\Users\user\Documents\MHealz\Healz\Healz\bin\Debug\netcoreapp2.2\Healz.Views.pdb
-C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.csprojAssemblyReference.cache
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.RazorAssemblyInfo.cache
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.RazorAssemblyInfo.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.AssemblyInfoInputs.cache

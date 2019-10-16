@@ -78,8 +78,8 @@ namespace Healz
             {
                 options.AddPolicy("EditRolePolicy", policy => policy
                      .RequireRole("Admin")
-                     .RequireClaim("Edit Role", "true")                          //   video 99
-                     .RequireRole("Super Admin")
+                     //.RequireClaim("Edit Role", "true")                          //   video 99
+                     //.RequireRole("Admin")
                  ); 
                 options.AddPolicy("DeleteRolePolicy",
                     policy => policy.RequireClaim("Delete Role").RequireClaim("Create Role"));
@@ -88,6 +88,7 @@ namespace Healz
 
                 options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin")); //part 95
                 options.AddPolicy("DoctorRolePolicy", policy => policy.RequireRole("Doctor")); //part 95
+                options.AddPolicy("UserRolePolicy", policy => policy.RequireRole("User")); //part 95
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
