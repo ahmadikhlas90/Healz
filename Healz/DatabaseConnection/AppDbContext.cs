@@ -1,4 +1,5 @@
 ﻿using Healz.Entities;
+using Healz.Entities.BasicInfo;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -27,6 +28,7 @@ namespace Healz.DatabaseConnection
                 foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
             }
         }
+        public DbSet<PatientInfo> PatientInfo { get; set; }
 
     }
 }

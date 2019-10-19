@@ -2,24 +2,35 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Healz.DatabaseConnection;
 using Healz.Entities;
+using Healz.Entities.BasicInfo;
 using Healz.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Healz.Controllers
 {
     [AllowAnonymous]
     public class AccountController : Controller
     {
+        
+        private readonly RoleManager<ApplicationRole> roleManager;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+
+        public AccountController(UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager, 
+            RoleManager<ApplicationRole>  roleManager
+         )
         {
+            this.roleManager = roleManager;
             this.userManager = userManager;
             this.signInManager = signInManager;
+       
         }
 
         [HttpGet]
@@ -30,33 +41,42 @@ namespace Healz.Controllers
         [HttpGet]
         public ActionResult Register()
         {
+
+            List<SelectListItem> items = new List<SelectListItem> { new SelectListItem { Value = "0", Text = "- Select Country -" } };
+            foreach (var role in roleManager.Roles)
+            {
+                items.Add(new SelectListItem() { Value = role.Name, Text = role.Name });
+            }
+            ViewBag.item = items;
             return View();
         }
+
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser
+                   var user = new ApplicationUser
                 {
-                    UserName=model.Email,
+                    UserName = model.Email,
                     FirstName = model.FirstName,
-                    LastName=model.LastName,
-                    Email = model.Email
+                    LastName = model.LastName,
+                    Email = model.Email,
                 };
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                   result = await userManager.AddToRoleAsync(user, model.RoleName);
                     // If the user is signed in and in the Admin role, then it is
                     // the Admin user that is creating a new user. So redirect the
                     // Admin user to ListRoles action
-                    if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-                    {
-                        return RedirectToAction("ListUsers", "Administration");
-                    }
+                    //if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    //{
+                    //    return RedirectToAction("SelectRole", "Form");
+                    //}
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
+                    return RedirectToAction("Index", "Home");   
                 }
                 foreach (var error in result.Errors)
                 {
@@ -112,6 +132,12 @@ namespace Healz.Controllers
             {
                 return Json($"Email {email} is already in use.");
             }
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }

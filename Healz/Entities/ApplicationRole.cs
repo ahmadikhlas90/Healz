@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Healz.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,10 @@ namespace Healz.Entities
 
         }
         public DateTime CreationDate { get; set; }
+
+        internal EditRoleViewModel ToModel()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

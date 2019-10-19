@@ -64,6 +64,8 @@ namespace Healz.Migrations
 
                     b.Property<string>("FirstName");
 
+                    b.Property<string>("ImgUrl");
+
                     b.Property<string>("LastName");
 
                     b.Property<bool>("LockoutEnabled");
@@ -102,6 +104,44 @@ namespace Healz.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("Healz.Entities.BasicInfo.PatientInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired();
+
+                    b.Property<string>("Cast");
+
+                    b.Property<string>("Designation");
+
+                    b.Property<string>("MailingAddress");
+
+                    b.Property<string>("MinitelStatus");
+
+                    b.Property<string>("MotherName");
+
+                    b.Property<string>("Occupation");
+
+                    b.Property<string>("PhysicalAddress");
+
+                    b.Property<string>("ReligionName");
+
+                    b.Property<string>("SpouseName");
+
+                    b.Property<string>("SufferingFrom");
+
+                    b.Property<string>("ZipCode");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("PatientInfo");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -188,6 +228,14 @@ namespace Healz.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Healz.Entities.BasicInfo.PatientInfo", b =>
+                {
+                    b.HasOne("Healz.Entities.ApplicationUser", "ApplicationUser")
+                        .WithMany("Patients")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

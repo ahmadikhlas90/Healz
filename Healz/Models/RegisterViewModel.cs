@@ -1,8 +1,10 @@
-﻿using Healz.Utilities;
+﻿using Healz.Entities;
+using Healz.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,6 +12,9 @@ namespace Healz.Models
 {
     public class RegisterViewModel
     {
+   
+        [Column(TypeName = "nvarchar(450)")]
+        public string ID { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -29,6 +34,9 @@ namespace Healz.Models
         [Compare("Password",
             ErrorMessage = "Password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        [Required]
+        public string RoleName { get; set; }
+
 
     }
 }

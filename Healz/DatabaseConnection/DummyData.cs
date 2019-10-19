@@ -36,7 +36,7 @@ namespace Healz.DatabaseConnection
                 await roleManager.CreateAsync(new ApplicationRole(role3,  DateTime.Now));
             }
 
-            if (await userManager.FindByNameAsync("user@gmail.com") == null)
+            if (await userManager.FindByNameAsync("User@Gmail.com") == null)
             {
                 var user = new ApplicationUser
                 {
@@ -58,7 +58,7 @@ namespace Healz.DatabaseConnection
                 adminId1 = user.Id;
             }
 
-            if (await userManager.FindByNameAsync("admin@gmail.com") == null)
+            if (await userManager.FindByNameAsync("Admin@Gmail.com") == null)
             {
                 var user = new ApplicationUser
                 {
@@ -80,7 +80,7 @@ namespace Healz.DatabaseConnection
                 adminId2 = user.Id;
             }
 
-            if (await userManager.FindByNameAsync("doctor@gmail.com") == null)
+            if (await userManager.FindByNameAsync("Doctor@Gmail.com") == null)
             {
                 var user = new ApplicationUser
                 {

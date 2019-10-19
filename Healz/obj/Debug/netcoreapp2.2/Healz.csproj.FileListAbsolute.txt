@@ -17,6 +17,7 @@ C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.TagHelp
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.TagHelpers.output.cache
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.RazorCoreGenerate.cache
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\Account\Profile.cshtml.g.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\Administration\AccessDenied.cshtml.g.cs
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.cshtml.g.cs
@@ -96,3 +97,4 @@ C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.Views.p
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.dll
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.pdb
 C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.csproj.CopyComplete
+C:\Users\user\Documents\MHealz\Healz\Healz\obj\Debug\netcoreapp2.2\Healz.csprojAssemblyReference.cache

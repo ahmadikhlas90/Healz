@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Healz.Entities.BasicInfo;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,17 @@ namespace Healz.Entities
 {
     public class ApplicationUser : IdentityUser
     {
+        public ApplicationUser()
+        {
+            Patients = new List<PatientInfo>();
+        }
+      
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddelInitial { get; set; }
         public string CNIC { get; set; }
+        public string ImgUrl { get; set; }
+
+        public virtual ICollection<PatientInfo> Patients { get; set; }
     }
 }

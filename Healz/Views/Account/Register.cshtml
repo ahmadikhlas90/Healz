@@ -1,6 +1,7 @@
 ﻿@model RegisterViewModel
 @{
     ViewBag.Title = "User Register";
+    List<SelectListItem> items = ViewBag.item;
 }
 
 <div class="row">
@@ -47,13 +48,16 @@
                         <div role="tabpanel" class="tab-pane active" id="overview">
                             <div class="tg-searchbulder">
                                 <div id="tg-signincategoryslider" class="tg-categoryslider tg-category tg-signincategory">
+                                 
                                     <span data-id="doctorscategory" class="item tg-radio">
                                         <input type="radio" id="doctors" name="maincategory" value="Doctors" checked="">
                                         <label for="doctors">
                                             <span><img src="~/images/icons/icon-08.png" alt="image description"></span>
-                                            <span>Doctors</span>
+                                            <span>Doctor</span>
                                         </label>
                                     </span>
+
+
                                     <span data-id="hospitalscategory" class="item tg-radio">
                                         <input type="radio" id="hospitals" name="maincategory" value="Hospitals">
                                         <label for="hospitals">
@@ -107,68 +111,76 @@
                                 <div id="tg-subcategories" class="tg-subcategories">
                                     <div id="doctorscategory" class="col-md-4 tg-tabcontent tg-active">
                                         <form method="post" class="tg-formtheme tg-formsigninsignup">
-                                         
-
-                                                <div class="row tg-rowmargin">
 
 
-                                                    @*<div class=" tg-columnpadding">
+                                            <div class="row tg-rowmargin">
 
-                                                        <div class="form-group tg-formgroup">
-                                                                <label asp-for="RegisterInput.Title"></label>
-                                                                <select class="form-control" asp-for="RegisterInput.Title">
-                                                                    <option value="">Select</option>
-                                                                    <option value="Mr">Mr</option>
-                                                                    <option value="Mrs">Mrs</option>
-                                                                </select>
-                                                                <span asp-validation-for="RegisterInput.Title" class="text-danger"></span>
-                                                            </div>
-                                                    </div>*@
-                                                    <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
-                                                        <div class="form-group tg-formgroup">
-                                                            <label asp-for="FirstName"></label>
-                                                            <input asp-for="FirstName" class="form-control" />
-                                                            <span asp-validation-for="FirstName" class="text-danger"></span>
+
+                                                @*<div class=" tg-columnpadding">
+
+                                                    <div class="form-group tg-formgroup">
+                                                            <label asp-for="RegisterInput.Title"></label>
+                                                            <select class="form-control" asp-for="RegisterInput.Title">
+                                                                <option value="">Select</option>
+                                                                <option value="Mr">Mr</option>
+                                                                <option value="Mrs">Mrs</option>
+                                                            </select>
+                                                            <span asp-validation-for="RegisterInput.Title" class="text-danger"></span>
                                                         </div>
-                                                    </div>
-                                                   <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
-                                                        <div class="form-group tg-formgroup">
-                                                            <label asp-for="LastName"></label>
-                                                            <input asp-for="LastName" class="form-control" />
-                                                            <span asp-validation-for="LastName" class="text-danger"></span>
-                                                        </div>
-                                                    </div>
-                                                   <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
-                                                       <div class="form-group tg-formgroup">
-
-                                                           <label asp-for="Email"></label>
-                                                           <input asp-for="Email" class="form-control" />
-                                                           <span asp-validation-for="Email" class="text-danger"></span>
-
-                                                       </div>
-                                                   </div>
-                                                    <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
-                                                        <div class="form-group tg-formgroup">
-
-                                                            <label asp-for="Password"></label>
-                                                            <input asp-for="Password" class="form-control" />
-                                                            <span asp-validation-for="Password" class="text-danger"></span>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
-                                                        <div class="form-group tg-formgroup">
-                                                            <label asp-for="ConfirmPassword"></label>
-                                                            <input asp-for="ConfirmPassword" class="form-control" />
-                                                            <span asp-validation-for="Password" class="text-danger"></span>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-sm-12 col-xs-12 tg-columnpadding">
-                                                        <button type="submit" class="tg-btn tg-btn-lg">Register</button>
+                                                </div>*@
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="FirstName"></label>
+                                                        <input asp-for="FirstName" class="form-control" />
+                                                        <span asp-validation-for="FirstName" class="text-danger"></span>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="LastName"></label>
+                                                        <input asp-for="LastName" class="form-control" />
+                                                        <span asp-validation-for="LastName" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Email"></label>
+                                                        <input asp-for="Email" class="form-control" />
+                                                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Password"></label>
+                                                        <input asp-for="Password" class="form-control" />
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="ConfirmPassword"></label>
+                                                        <input asp-for="ConfirmPassword" class="form-control" />
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                             
+                                                <div class="form-group">
+                                                     <div class="input-group">
+                                                         <span asp-validation-for="Password" class="text-danger"></span>
+                                                         <span class="input-group-text"><span class="glyphicon glyphicon-road"></span> </span>
+                                                         <select asp-for="RoleName" asp-items="@items" class="form-control">
+                                                         </select>
+                                                     </div>
+                                                </div> 
+                                                <div class="col-sm-12 col-xs-12 tg-columnpadding">
+                                                    <button type="submit" class="tg-btn tg-btn-lg">Register</button>
+                                                </div>
+                                            </div>
                                         </form>
                                         <div class="tg-registervia">
                                             <div class="tg-title">
