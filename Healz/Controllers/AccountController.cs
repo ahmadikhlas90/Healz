@@ -18,16 +18,19 @@ namespace Healz.Controllers
     {
         
         private readonly RoleManager<ApplicationRole> roleManager;
+        private readonly AppDbContext db;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
 
 
         public AccountController(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager, 
-            RoleManager<ApplicationRole>  roleManager
+            RoleManager<ApplicationRole>  roleManager,
+            AppDbContext db
          )
         {
             this.roleManager = roleManager;
+            this.db = db;
             this.userManager = userManager;
             this.signInManager = signInManager;
        
@@ -57,7 +60,8 @@ namespace Healz.Controllers
         {
             if (ModelState.IsValid)
             {
-                   var user = new ApplicationUser
+              
+                var user = new ApplicationUser
                 {
                     UserName = model.Email,
                     FirstName = model.FirstName,
@@ -65,18 +69,41 @@ namespace Healz.Controllers
                     Email = model.Email,
                 };
                 var result = await userManager.CreateAsync(user, model.Password);
+               
                 if (result.Succeeded)
                 {
                    result = await userManager.AddToRoleAsync(user, model.RoleName);
-                    // If the user is signed in and in the Admin role, then it is
-                    // the Admin user that is creating a new user. So redirect the
-                    // Admin user to ListRoles action
-                    //if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-                    //{
-                    //    return RedirectToAction("SelectRole", "Form");
+                    if ( model.RoleName == "Admin" && user.FirstName=="AWSIK")
+                    {
+
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("Insights", "User");
+                    }
+                    if ( model.RoleName == "Doctor")
+                    {
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("invoices", "User");
+                    }
+                    if ( model.RoleName == "User")
+                    {
+                        var use = new PatientInfo
+                        {
+                            ApplicationUsersID = user.Id,
+                            MailingAddress=model.PatientInfo.MailingAddress
+                            
+                        };
+                        db.Add(use);
+                        db.SaveChanges();
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("UserProfile", "User");
+                    }
+                    else {
+                        return RedirectToAction("Register", "Account");
+                    }
+                    //else {
+                    //    await signInManager.SignInAsync(user, isPersistent: false);
+                    //    return RedirectToAction("Index", "Home");
                     //}
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");   
                 }
                 foreach (var error in result.Errors)
                 {

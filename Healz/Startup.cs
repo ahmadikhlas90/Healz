@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Healz.DatabaseConnection;
 using Healz.Entities;
+using Healz.Repository.Implimentation;
+using Healz.Repository.Interfaces;
+using Heaz.Repository.Implimentation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -74,6 +77,12 @@ namespace Healz
             {
                 options.AccessDeniedPath = new PathString("/Home/E_404");//part 97
             });
+
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IPateintInfoRepository, PatientRepository>();
+
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("EditRolePolicy", policy => policy

@@ -1,4 +1,6 @@
 ﻿using Healz.Entities;
+using Healz.Entities.BasicInfo;
+using Healz.Models.UserProfile;
 using Healz.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,7 +14,8 @@ namespace Healz.Models
 {
     public class RegisterViewModel
     {
-   
+
+      
         [Column(TypeName = "nvarchar(450)")]
         public string ID { get; set; }
         [Required]
@@ -37,6 +40,6 @@ namespace Healz.Models
         [Required]
         public string RoleName { get; set; }
 
-
+        public PatientInfo PatientInfo { get; set; }
     }
 }

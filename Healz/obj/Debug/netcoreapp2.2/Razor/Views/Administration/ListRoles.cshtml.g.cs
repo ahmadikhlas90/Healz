@@ -28,6 +28,16 @@ using Healz.Entities;
 
 #line default
 #line hidden
+#line 4 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Models.UserProfile;
+
+#line default
+#line hidden
+#line 5 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Entities.BasicInfo;
+
+#line default
+#line hidden
 #line 1 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\Administration\ListRoles.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -39,7 +49,7 @@ using Microsoft.AspNetCore.Authorization;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f79799bc5a115558092c53863559b4b41eac71", @"/Views/Administration/ListRoles.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c17f73524b13872924c54f2512a20ed5f49a1fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b634e72b02b176cc6987405462b0434bcd0c04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Administration_ListRoles : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ApplicationRole>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary mb-3"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -99,7 +109,7 @@ using Microsoft.AspNetCore.Authorization;
             WriteLiteral("    ");
             EndContext();
             BeginContext(268, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac717947", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac718235", async() => {
                 BeginContext(383, 12, true);
                 WriteLiteral("Add new role");
                 EndContext();
@@ -155,7 +165,7 @@ using Microsoft.AspNetCore.Authorization;
             WriteLiteral("</h5>\r\n            </div>\r\n            <div class=\"card-footer\">\r\n                ");
             EndContext();
             BeginContext(739, 1043, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7110944", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7111232", async() => {
                 BeginContext(807, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();
@@ -169,7 +179,7 @@ using Microsoft.AspNetCore.Authorization;
                 WriteLiteral("                        ");
                 EndContext();
                 BeginContext(907, 197, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7111661", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7111949", async() => {
                     BeginContext(1040, 60, true);
                     WriteLiteral("\r\n                            Edit\r\n                        ");
                     EndContext();
@@ -316,7 +326,7 @@ else
             ");
             EndContext();
             BeginContext(2104, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7120530", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7120818", async() => {
                 BeginContext(2222, 43, true);
                 WriteLiteral("\r\n                Create Role\r\n            ");
                 EndContext();
@@ -354,7 +364,7 @@ else
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(2328, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7122760", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88f79799bc5a115558092c53863559b4b41eac7123048", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -28,8 +28,18 @@ using Healz.Entities;
 
 #line default
 #line hidden
+#line 4 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Models.UserProfile;
+
+#line default
+#line hidden
+#line 5 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Entities.BasicInfo;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"539c8cb46b013c4f516aee4c9569994c8c127f37", @"/Views/Home/Appoinmentsetting.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c17f73524b13872924c54f2512a20ed5f49a1fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b634e72b02b176cc6987405462b0434bcd0c04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Appoinmentsetting : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("tg-themeform tg-formtimeslots"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -117,7 +127,7 @@ using Healz.Entities;
                                     ");
             EndContext();
             BeginContext(1888, 59093, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f376509", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f376797", async() => {
                 BeginContext(1932, 3944, true);
                 WriteLiteral(@"
                                         <fieldset>
@@ -169,7 +179,7 @@ using Healz.Entities;
                                                                             ");
                 EndContext();
                 BeginContext(5876, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3711020", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3711308", async() => {
                     BeginContext(5884, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -189,7 +199,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(5979, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3712355", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3712643", async() => {
                     BeginContext(5987, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -209,7 +219,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(6082, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3713690", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3713978", async() => {
                     BeginContext(6090, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -238,7 +248,7 @@ using Healz.Entities;
                                                                             ");
                 EndContext();
                 BeginContext(6893, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3715739", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3716027", async() => {
                     BeginContext(6901, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -258,7 +268,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(7004, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3717083", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3717371", async() => {
                     BeginContext(7012, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -278,7 +288,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(7115, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3718427", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3718715", async() => {
                     BeginContext(7123, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -307,7 +317,7 @@ using Healz.Entities;
                                                                             ");
                 EndContext();
                 BeginContext(7934, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3720485", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3720773", async() => {
                     BeginContext(7942, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();
@@ -327,7 +337,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(8035, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3721818", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3722106", async() => {
                     BeginContext(8043, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();
@@ -347,7 +357,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(8136, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3723151", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3723439", async() => {
                     BeginContext(8144, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();
@@ -986,7 +996,7 @@ using Healz.Entities;
                                     ");
             EndContext();
             BeginContext(61777, 29173, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3782213", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3782501", async() => {
                 BeginContext(61821, 5136, true);
                 WriteLiteral(@"
                                         <fieldset>
@@ -1050,7 +1060,7 @@ using Healz.Entities;
                 WriteLiteral("                ");
                 EndContext();
                 BeginContext(66957, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3788018", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3788306", async() => {
                     BeginContext(66965, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -1070,7 +1080,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(67060, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3789356", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3789644", async() => {
                     BeginContext(67068, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -1090,7 +1100,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(67163, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3790694", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3790982", async() => {
                     BeginContext(67171, 8, true);
                     WriteLiteral("Interval");
                     EndContext();
@@ -1119,7 +1129,7 @@ using Healz.Entities;
                                                                             ");
                 EndContext();
                 BeginContext(67974, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3792746", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3793034", async() => {
                     BeginContext(67982, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -1139,7 +1149,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(68085, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3794093", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3794381", async() => {
                     BeginContext(68093, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -1159,7 +1169,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(68196, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3795440", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3795728", async() => {
                     BeginContext(68204, 16, true);
                     WriteLiteral("Meeting Duration");
                     EndContext();
@@ -1188,7 +1198,7 @@ using Healz.Entities;
                                                                             ");
                 EndContext();
                 BeginContext(69015, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3797501", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3797789", async() => {
                     BeginContext(69023, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();
@@ -1208,7 +1218,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(69116, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3798837", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f3799125", async() => {
                     BeginContext(69124, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();
@@ -1228,7 +1238,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                            ");
                 EndContext();
                 BeginContext(69217, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f37100173", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "539c8cb46b013c4f516aee4c9569994c8c127f37100461", async() => {
                     BeginContext(69225, 6, true);
                     WriteLiteral("Spaces");
                     EndContext();

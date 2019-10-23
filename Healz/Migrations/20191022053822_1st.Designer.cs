@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Healz.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191017104605_1st")]
+    [Migration("20191022053822_1st")]
     partial class _1st
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,8 +66,6 @@ namespace Healz.Migrations
 
                     b.Property<string>("FirstName");
 
-                    b.Property<string>("ImgUrl");
-
                     b.Property<string>("LastName");
 
                     b.Property<bool>("LockoutEnabled");
@@ -114,12 +112,14 @@ namespace Healz.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("ApplicationUserId")
-                        .IsRequired();
+                    b.Property<string>("ApplicationUsersID");
 
                     b.Property<string>("Cast");
 
                     b.Property<string>("Designation");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("MailingAddress");
 
@@ -141,9 +141,34 @@ namespace Healz.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
+                    b.HasIndex("ApplicationUsersID");
 
                     b.ToTable("PatientInfo");
+                });
+
+            modelBuilder.Entity("Healz.Entities.BasicInfo.Physician", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicationUsersID");
+
+                    b.Property<string>("MinitelStatus");
+
+                    b.Property<string>("PostalAddress");
+
+                    b.Property<string>("PracticingFrom");
+
+                    b.Property<string>("ProfessionlStatement");
+
+                    b.Property<string>("SpouseName");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUsersID");
+
+                    b.ToTable("Physician");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -234,9 +259,17 @@ namespace Healz.Migrations
 
             modelBuilder.Entity("Healz.Entities.BasicInfo.PatientInfo", b =>
                 {
-                    b.HasOne("Healz.Entities.ApplicationUser", "ApplicationUser")
+                    b.HasOne("Healz.Entities.ApplicationUser", "ApplicationUsers")
                         .WithMany("Patients")
-                        .HasForeignKey("ApplicationUserId")
+                        .HasForeignKey("ApplicationUsersID")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Healz.Entities.BasicInfo.Physician", b =>
+                {
+                    b.HasOne("Healz.Entities.ApplicationUser", "ApplicationUsers")
+                        .WithMany("Physicians")
+                        .HasForeignKey("ApplicationUsersID")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 

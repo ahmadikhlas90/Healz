@@ -45,8 +45,7 @@ namespace Healz.Migrations
                     FirstName = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),
                     MiddelInitial = table.Column<string>(nullable: true),
-                    CNIC = table.Column<string>(nullable: true),
-                    ImgUrl = table.Column<string>(nullable: true)
+                    CNIC = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -176,14 +175,39 @@ namespace Healz.Migrations
                     ReligionName = table.Column<string>(nullable: true),
                     Occupation = table.Column<string>(nullable: true),
                     Designation = table.Column<string>(nullable: true),
-                    ApplicationUserId = table.Column<string>(nullable: false)
+                    ImageUrl = table.Column<string>(type: "varchar(255)", nullable: true),
+                    ApplicationUsersID = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PatientInfo", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PatientInfo_AspNetUsers_ApplicationUserId",
-                        column: x => x.ApplicationUserId,
+                        name: "FK_PatientInfo_AspNetUsers_ApplicationUsersID",
+                        column: x => x.ApplicationUsersID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Physician",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ProfessionlStatement = table.Column<string>(nullable: true),
+                    PracticingFrom = table.Column<string>(nullable: true),
+                    PostalAddress = table.Column<string>(nullable: true),
+                    MinitelStatus = table.Column<string>(nullable: true),
+                    SpouseName = table.Column<string>(nullable: true),
+                    ApplicationUsersID = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Physician", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Physician_AspNetUsers_ApplicationUsersID",
+                        column: x => x.ApplicationUsersID,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -229,9 +253,14 @@ namespace Healz.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PatientInfo_ApplicationUserId",
+                name: "IX_PatientInfo_ApplicationUsersID",
                 table: "PatientInfo",
-                column: "ApplicationUserId");
+                column: "ApplicationUsersID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Physician_ApplicationUsersID",
+                table: "Physician",
+                column: "ApplicationUsersID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -253,6 +282,9 @@ namespace Healz.Migrations
 
             migrationBuilder.DropTable(
                 name: "PatientInfo");
+
+            migrationBuilder.DropTable(
+                name: "Physician");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

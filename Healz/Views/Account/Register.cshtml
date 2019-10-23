@@ -53,7 +53,7 @@
                                         <input type="radio" id="doctors" name="maincategory" value="Doctors" checked="">
                                         <label for="doctors">
                                             <span><img src="~/images/icons/icon-08.png" alt="image description"></span>
-                                            <span>Doctor</span>
+                                            <span>Admin</span>
                                         </label>
                                     </span>
 
@@ -62,14 +62,14 @@
                                         <input type="radio" id="hospitals" name="maincategory" value="Hospitals">
                                         <label for="hospitals">
                                             <span><img src="~/images/icons/icon-09.png" alt="image description"></span>
-                                            <span>Hospitals</span>
+                                            <span>Doctor</span>
                                         </label>
                                     </span>
                                     <span data-id="spascategory" class="item tg-radio">
                                         <input type="radio" id="spas" name="maincategory" value="Spas">
                                         <label for="spas">
                                             <span><img src="~/images/icons/icon-10.png" alt="image description"></span>
-                                            <span>Spas</span>
+                                            <span>User</span>
                                         </label>
                                     </span>
                                     <span data-id="pharmaciescategory" class="item tg-radio">
@@ -109,25 +109,20 @@
                                     </span>
                                 </div>
                                 <div id="tg-subcategories" class="tg-subcategories">
-                                    <div id="doctorscategory" class="col-md-4 tg-tabcontent tg-active">
+                                    <div id="doctorscategory"class="tg-tabcontent tg-active">
                                         <form method="post" class="tg-formtheme tg-formsigninsignup">
-
-
                                             <div class="row tg-rowmargin">
-
-
                                                 @*<div class=" tg-columnpadding">
-
-                                                    <div class="form-group tg-formgroup">
-                                                            <label asp-for="RegisterInput.Title"></label>
-                                                            <select class="form-control" asp-for="RegisterInput.Title">
-                                                                <option value="">Select</option>
-                                                                <option value="Mr">Mr</option>
-                                                                <option value="Mrs">Mrs</option>
-                                                            </select>
-                                                            <span asp-validation-for="RegisterInput.Title" class="text-danger"></span>
-                                                        </div>
-                                                </div>*@
+                        <div class="form-group tg-formgroup">
+                                <label asp-for="RegisterInput.Title"></label>
+                                <select class="form-control" asp-for="RegisterInput.Title">
+                                    <option value="">Select</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                </select>
+                                <span asp-validation-for="RegisterInput.Title" class="text-danger"></span>
+                            </div>
+                    </div>*@
                                                 <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
                                                     <div class="form-group tg-formgroup">
                                                         <label asp-for="FirstName"></label>
@@ -160,7 +155,6 @@
 
                                                     </div>
                                                 </div>
-
                                                 <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
                                                     <div class="form-group tg-formgroup">
                                                         <label asp-for="ConfirmPassword"></label>
@@ -168,15 +162,200 @@
                                                         <span asp-validation-for="Password" class="text-danger"></span>
                                                     </div>
                                                 </div>
-                                             
+                                                @*<div class="form-group">
+                         <div class="input-group">
+                             <span asp-validation-for="Password" class="text-danger"></span>
+                             <span class="input-group-text"><span class="glyphicon glyphicon-road"></span> </span>
+                             <select asp-for="RoleName" asp-items="@items" class="form-control">
+                             </select>
+                         </div>
+                    </div>*@
+                                                
                                                 <div class="form-group">
-                                                     <div class="input-group">
-                                                         <span asp-validation-for="Password" class="text-danger"></span>
-                                                         <span class="input-group-text"><span class="glyphicon glyphicon-road"></span> </span>
-                                                         <select asp-for="RoleName" asp-items="@items" class="form-control">
-                                                         </select>
-                                                     </div>
-                                                </div> 
+                                                    <div class="input-group ">
+                                                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                                                        @if (items != null)
+                                                        {
+                                                            <hr />
+                                                            <span data-id="doctorscategory" class="item tg-radio">
+                                                                <input type="radio" id="doctors" name="maincategory" value="Doctors" checked="">
+                                                                <label for="doctors">
+                                                                    <span><img src="~/images/icons/icon-08.png" alt="image description"></span>
+                                                                    <span>Admin</span>
+                                                                </label>
+                                                            </span>
+                                                            <select asp-for="RoleName" hidden>
+                                                                <option value="Admin">Admin</option>
+                                                            </select>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-xs-12 tg-columnpadding">
+                                                    <button type="submit" class="tg-btn tg-btn-lg">Register</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="tg-registervia">
+                                            <div class="tg-title">
+                                                <h2>Or Register Via</h2>
+                                            </div>
+                                            <ul class="tg-socialiconslarge">
+                                                <li class="tg-facebook"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li class="tg-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li class="tg-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li class="tg-googleplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li class="tg-dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                <li class="tg-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="hospitalscategory" class="tg-tabcontent">
+                                        <form class="tg-formtheme tg-formsigninsignup" method="post">
+                                            <div class="row tg-rowmargin">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="FirstName"></label>
+                                                        <input asp-for="FirstName" class="form-control" />
+                                                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="LastName"></label>
+                                                        <input asp-for="LastName" class="form-control" />
+                                                        <span asp-validation-for="LastName" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Email"></label>
+                                                        <input asp-for="Email" class="form-control" />
+                                                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Password"></label>
+                                                        <input asp-for="Password" class="form-control" />
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="ConfirmPassword"></label>
+                                                        <input asp-for="ConfirmPassword" class="form-control" />
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group ">
+                                                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                                                        @if (items != null)
+                                                        {
+                                                            <hr />
+                                                            <span data-id="hospitalscategory" class="item tg-radio">
+                                                                <input type="radio" id="hospitals" name="maincategory" value="Doctor" checked="">
+                                                                <label for="hospitals">
+                                                                    <span><img src="~/images/icons/icon-09.png" alt="image description"></span>
+                                                                    <span>Doctor</span>
+                                                                </label>
+                                                            </span>
+                                                            <select asp-for="RoleName" hidden>
+                                                                <option value="Doctor">Doctor</option>
+                                                            </select>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-xs-12 tg-columnpadding">
+                                                    <button type="submit" class="tg-btn tg-btn-lg">Register</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="tg-registervia">
+                                            <div class="tg-title">
+                                                <h2>Or Register Via</h2>
+                                            </div>
+                                            <ul class="tg-socialiconslarge">
+                                                <li class="tg-facebook"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li class="tg-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li class="tg-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li class="tg-googleplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li class="tg-dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                <li class="tg-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="spascategory" class="tg-tabcontent">
+                                        <form class="tg-formtheme tg-formsigninsignup" method="post">
+                                            <div class="row tg-rowmargin">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="FirstName"></label>
+                                                        <input asp-for="FirstName" class="form-control" />
+                                                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="LastName"></label>
+                                                        <input asp-for="LastName" class="form-control" />
+                                                        <span asp-validation-for="LastName" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="PatientInfo.MailingAddress"></label>
+                                                        <input asp-for="PatientInfo.MailingAddress" class="form-control" />
+                                                        <span asp-validation-for="PatientInfo.MailingAddress" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Email"></label>
+                                                        <input asp-for="Email" class="form-control" />
+                                                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+
+                                                        <label asp-for="Password"></label>
+                                                        <input asp-for="Password" class="form-control" />
+                                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                                    <div class="form-group tg-formgroup">
+                                                        <label asp-for="ConfirmPassword"></label>
+                                                        <input asp-for="ConfirmPassword" class="form-control" />
+                                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group ">
+                                                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                                                        @if (items != null)
+                                                        {
+                                                            <hr />
+                                                            <span data-id="spascategory" class="item tg-radio">
+                                                                <input type="radio" id="spas" name="maincategory" value="User" checked="">
+                                                                <label for="spas">
+                                                                    <span><img src="~/images/icons/icon-10.png" alt="image description"></span>
+                                                                    <span>User</span>
+                                                                </label>
+                                                            </span>
+                                                            <select asp-for="RoleName" hidden>
+                                                                <option value="User">User</option>
+                                                            </select>
+                                                        }
+                                                    </div>
+                                                </div>
                                                 <div class="col-sm-12 col-xs-12 tg-columnpadding">
                                                     <button type="submit" class="tg-btn tg-btn-lg">Register</button>
                                                 </div>

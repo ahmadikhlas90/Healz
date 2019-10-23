@@ -18,8 +18,8 @@ namespace Healz.Entities
         public string LastName { get; set; }
         public string MiddelInitial { get; set; }
         public string CNIC { get; set; }
-        public string ImgUrl { get; set; }
-
         public virtual ICollection<PatientInfo> Patients { get; set; }
+        public virtual ICollection<Physician> Physicians { get; set; }
+
     }
 }

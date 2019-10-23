@@ -1,0 +1,346 @@
+﻿@model UserProfileViewModel
+@{
+    ViewData["Title"] = "UserProfile";
+    var v=(PatientInfo)ViewBag.bd;
+
+    PatientInfo patient = new PatientInfo();
+    //var photoPaths= "    ~/images/"+ (patient.ImageUrl ?? "user.png");
+}
+
+<div class="container">
+        <div class="card">
+            <div class="card-header"><h4>Profile Update</h4></div>
+            <div class="card-title center-block"><span>Please Fill Complete Form</span></div>
+            <div class="card-body ">
+                <form id="fffm" asp-action="Profile" asp-controller="Admin" class="p-3" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="card-text control-label p-2" ><strong style="font-family:Arial;font-size:40px;">@v.ApplicationUsers.FirstName @v.ApplicationUsers.LastName</strong></label>
+                        <div class="custom-file">
+                            @*@if (string.IsNullOrEmpty(currentUser.ImageUrl))
+                            {*@
+                                <img src="@Url.Content("~/images/user.png")" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" />
+                            @*}
+                            else
+                            {
+                                var photopath = "~/images/" + (patient.ImageUrl ?? "user.png");
+                                <img src="@photopath" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" asp-append-version="true" />
+                            }*@
+
+                        </div>
+                    </div>
+                  
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-12" style="margin-top:100px">
+                        
+                        @if (v.SpouseName != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="SpouseName"></label>
+                                    <input asp-for="@v.SpouseName" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="SpouseName"></label>
+                                    <input asp-for="SpouseName" class="form-control" />
+                                    <span asp-validation-for="SpouseName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            }
+                        @if (v.MotherName != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="MotherName"></label>
+                                    <input asp-for="@v.MotherName" class="form-control"   readonly/>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="MotherName"></label>
+                                <input asp-for="MotherName" class="form-control" />
+                                <span asp-validation-for="MotherName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+
+                    <div class="col-12">
+                        @if (v.ReligionName != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ReligionName"></label>
+                                    <input asp-for="@v.ReligionName" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ReligionName"></label>
+                                    <input asp-for="ReligionName" class="form-control" />
+                                    <span asp-validation-for="ReligionName" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                        @if (v.Cast != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="Cast"></label>
+                                    <input asp-for="@v.Cast" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="Cast"></label>
+                                    <input asp-for="Cast" class="form-control" />
+                                    <span asp-validation-for="Cast" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-12">
+                        @if (v.Occupation != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="Occupation"></label>
+                                    <input asp-for="@v.Occupation" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="Occupation"></label>
+                                <input asp-for="Occupation" class="form-control" />
+                                <span asp-validation-for="Occupation" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                        @if (v.Designation != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="Designation"></label>
+                                    <input asp-for="@v.Designation" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="Designation"></label>
+                                <input asp-for="Designation" class="form-control" />
+                                <span asp-validation-for="Designation" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+                    <div class="col-12">
+                        @if (v.MinitelStatus != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="MinitelStatus"></label>
+                                    <input asp-for="@v.MinitelStatus" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="MinitelStatus"></label>
+                                <input asp-for="MinitelStatus" class="form-control" />
+                                <span asp-validation-for="MinitelStatus" class="text-danger"></span>
+                            </div>
+                        </div>}
+                        @if (v.MailingAddress != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="MailingAddress"></label>
+                                    <input asp-for="@v.MailingAddress" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="MailingAddress"></label>
+                                <input asp-for="MailingAddress" class="form-control" />
+                                <span asp-validation-for="MailingAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                    <div class="col-12">
+                        @if (v.PhysicalAddress != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="PhysicalAddress"></label>
+                                    <input asp-for="@v.PhysicalAddress" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="PhysicalAddress"></label>
+                                <input asp-for="PhysicalAddress" class="form-control" />
+                                <span asp-validation-for="PhysicalAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                        @if (v.ZipCode != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ZipCode"></label>
+                                    <input asp-for="@v.ZipCode" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                        <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                            <div class="form-group tg-formgroup">
+                                <label asp-for="ZipCode"></label>
+                                <input asp-for="ZipCode" class="form-control" />
+                                <span asp-validation-for="ZipCode" class="text-danger"></span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+                
+                    <div class="col-12">
+                        @if (v.ApplicationUsers.FirstName != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ApplicationUsers.FirstName"></label>
+                                    <input asp-for="@v.ApplicationUsers.FirstName" class="form-control"readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ApplicationUsers.FirstName"></label>
+                                    <input asp-for="ApplicationUsers.FirstName" class="form-control" />
+                                    <span asp-validation-for="ApplicationUsers.FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                        @if (v.ApplicationUsers.LastName != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ApplicationUsers.LastName"></label>
+                                    <input asp-for="@v.ApplicationUsers.LastName" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="ApplicationUsers.LastName"></label>
+                                    <input asp-for="ApplicationUsers.LastName" class="form-control" placeholder="@v.ApplicationUsers.LastName" />
+                                    <span asp-validation-for="ApplicationUsers.LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="form-group tg-formgroup" hidden>
+                            <label asp-for="ApplicationUsersID" hidden></label>
+                            <input asp-for="ApplicationUsersID" class="form-control" hidden />
+                            <span asp-validation-for="ApplicationUsers.ID" class="text-danger" hidden></span>
+                        </div>
+
+                        @if (v.SufferingFrom != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="SufferingFrom"></label>
+                                    <input asp-for="@v.SufferingFrom" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="SufferingFrom"></label>
+                                    <input asp-for="SufferingFrom" class="form-control" placeholder="@v.SufferingFrom" />
+                                    <span asp-validation-for="SufferingFrom" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                        @if (v.ImageUrl != null)
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="photo"></label>
+                                    <input asp-for="@v.ImageUrl" class="form-control" readonly />
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
+                                <div class="form-group tg-formgroup">
+                                    <label asp-for="photo" class="control-label"></label>
+                                    <div class="custom-file">
+                                        <input asp-for="photo" type="file" id="photo" name="photo" class="form-control custom-file-input" />
+                                        <label id="datadf" class="custom-file-label">Choose File.....</label>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" value="Save" class="btn btn-primary btn-block glyphicon glyphicon-save-file" style="font-size:20px;">&nbsp;Save</button>
+                    </div>
+                    @section Scripts{
+                        <script>
+                            $(document).ready(function () {
+                                $('.custom-file-input').on("change", function () {
+                                    var fileName = $(this).val().split("\\").pop();
+                                    $(this).next("#datadf").html(fileName);
+                                });
+                            });
+
+                        </script>
+                    }
+                </form>
+                
+            </div>
+        </div>
+</div>

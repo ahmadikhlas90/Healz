@@ -28,8 +28,18 @@ using Healz.Entities;
 
 #line default
 #line hidden
+#line 4 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Models.UserProfile;
+
+#line default
+#line hidden
+#line 5 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Entities.BasicInfo;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbd5d07a2c01e76ebaada3030095bbae5e7fc075", @"/Views/Home/Doctors.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c17f73524b13872924c54f2512a20ed5f49a1fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b634e72b02b176cc6987405462b0434bcd0c04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Doctors : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -121,12 +131,12 @@ using Healz.Entities;
                 ");
             EndContext();
             BeginContext(408, 4315, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07517501", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07517789", async() => {
                 BeginContext(449, 153, true);
                 WriteLiteral("\r\n                    <fieldset>\r\n                        <div class=\"tg-select\">\r\n                            <select>\r\n                                ");
                 EndContext();
                 BeginContext(602, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07518044", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07518332", async() => {
                     BeginContext(610, 7, true);
                     WriteLiteral("Doctors");
                     EndContext();
@@ -146,7 +156,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(660, 26, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07519331", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07519619", async() => {
                     BeginContext(668, 9, true);
                     WriteLiteral("Hospitals");
                     EndContext();
@@ -166,7 +176,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(720, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07520620", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07520908", async() => {
                     BeginContext(728, 8, true);
                     WriteLiteral("Phramacy");
                     EndContext();
@@ -186,7 +196,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(779, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07521908", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07522196", async() => {
                     BeginContext(787, 7, true);
                     WriteLiteral("Clinics");
                     EndContext();
@@ -206,7 +216,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(837, 28, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07523195", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07523483", async() => {
                     BeginContext(845, 11, true);
                     WriteLiteral("Blood Banks");
                     EndContext();
@@ -226,7 +236,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                            </select>\r\n                        </div>\r\n                        <div class=\"tg-select\">\r\n                            <select>\r\n                                ");
                 EndContext();
                 BeginContext(1057, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07524657", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07524945", async() => {
                     BeginContext(1065, 7, true);
                     WriteLiteral("Dentist");
                     EndContext();
@@ -246,7 +256,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1115, 26, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07525947", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07526235", async() => {
                     BeginContext(1123, 9, true);
                     WriteLiteral("Specilist");
                     EndContext();
@@ -266,7 +276,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1175, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07527239", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07527527", async() => {
                     BeginContext(1183, 13, true);
                     WriteLiteral("Heart Surgeon");
                     EndContext();
@@ -286,7 +296,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1239, 28, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07528536", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07528824", async() => {
                     BeginContext(1247, 11, true);
                     WriteLiteral("neurologist");
                     EndContext();
@@ -306,7 +316,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                            </select>\r\n                        </div>\r\n                        <div class=\"tg-select\">\r\n                            <select>\r\n                                ");
                 EndContext();
                 BeginContext(1459, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07530000", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07530288", async() => {
                     BeginContext(1476, 15, true);
                     WriteLiteral("Select Location");
                     EndContext();
@@ -328,7 +338,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1534, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07531508", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07531796", async() => {
                     BeginContext(1559, 8, true);
                     WriteLiteral("Aberdeen");
                     EndContext();
@@ -350,7 +360,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1610, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07533008", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07533296", async() => {
                     BeginContext(1636, 9, true);
                     WriteLiteral("Aldershot");
                     EndContext();
@@ -372,7 +382,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1688, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07534509", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07534797", async() => {
                     BeginContext(1715, 10, true);
                     WriteLiteral("Altrincham");
                     EndContext();
@@ -394,7 +404,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1768, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07536012", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07536300", async() => {
                     BeginContext(1794, 9, true);
                     WriteLiteral("Aylesbury");
                     EndContext();
@@ -416,7 +426,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1846, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07537513", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07537801", async() => {
                     BeginContext(1869, 6, true);
                     WriteLiteral("Bamber");
                     EndContext();
@@ -438,7 +448,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1918, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07539011", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07539299", async() => {
                     BeginContext(1941, 6, true);
                     WriteLiteral("Bangor");
                     EndContext();
@@ -460,7 +470,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1990, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07540509", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07540797", async() => {
                     BeginContext(2013, 6, true);
                     WriteLiteral("Batley");
                     EndContext();
@@ -482,7 +492,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2062, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07542007", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07542295", async() => {
                     BeginContext(2087, 8, true);
                     WriteLiteral("Bebingto");
                     EndContext();
@@ -504,7 +514,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2138, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07543507", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07543795", async() => {
                     BeginContext(2162, 7, true);
                     WriteLiteral("Bedford");
                     EndContext();
@@ -526,7 +536,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2212, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07545006", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07545294", async() => {
                     BeginContext(2239, 10, true);
                     WriteLiteral("Birmingham");
                     EndContext();
@@ -548,7 +558,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2292, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07546511", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07546799", async() => {
                     BeginContext(2318, 9, true);
                     WriteLiteral("Blackpool");
                     EndContext();
@@ -570,7 +580,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2370, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07548014", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07548302", async() => {
                     BeginContext(2396, 9, true);
                     WriteLiteral("Brentwood");
                     EndContext();
@@ -592,7 +602,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2448, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07549517", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07549805", async() => {
                     BeginContext(2472, 7, true);
                     WriteLiteral("Bristol");
                     EndContext();
@@ -614,7 +624,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2522, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07551018", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07551306", async() => {
                     BeginContext(2546, 7, true);
                     WriteLiteral("Cardiff");
                     EndContext();
@@ -636,7 +646,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2596, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07552519", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07552807", async() => {
                     BeginContext(2621, 8, true);
                     WriteLiteral("Carlisle");
                     EndContext();
@@ -658,7 +668,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2672, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07554021", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07554309", async() => {
                     BeginContext(2696, 7, true);
                     WriteLiteral("Crawley");
                     EndContext();
@@ -680,7 +690,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2746, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07555522", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07555810", async() => {
                     BeginContext(2773, 10, true);
                     WriteLiteral("Darlington");
                     EndContext();
@@ -702,7 +712,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2826, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07557027", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07557315", async() => {
                     BeginContext(2852, 9, true);
                     WriteLiteral("Eastleigh");
                     EndContext();
@@ -724,7 +734,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2904, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07558530", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07558818", async() => {
                     BeginContext(2929, 8, true);
                     WriteLiteral("Edinburg");
                     EndContext();
@@ -746,7 +756,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(2980, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07560032", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07560320", async() => {
                     BeginContext(3002, 5, true);
                     WriteLiteral("Esher");
                     EndContext();
@@ -768,7 +778,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3050, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07561531", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07561819", async() => {
                     BeginContext(3078, 11, true);
                     WriteLiteral("Glasgow SCO");
                     EndContext();
@@ -790,7 +800,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3132, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07563037", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07563325", async() => {
                     BeginContext(3158, 9, true);
                     WriteLiteral("Guildford");
                     EndContext();
@@ -812,7 +822,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3210, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07564540", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07564828", async() => {
                     BeginContext(3236, 9, true);
                     WriteLiteral("Halesowen");
                     EndContext();
@@ -834,7 +844,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3288, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07566043", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07566331", async() => {
                     BeginContext(3312, 7, true);
                     WriteLiteral("Halifax");
                     EndContext();
@@ -856,7 +866,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3362, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07567544", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07567832", async() => {
                     BeginContext(3387, 8, true);
                     WriteLiteral("Hamilton");
                     EndContext();
@@ -878,7 +888,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3438, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07569046", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07569334", async() => {
                     BeginContext(3460, 5, true);
                     WriteLiteral("Leeds");
                     EndContext();
@@ -900,7 +910,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3508, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07570545", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07570833", async() => {
                     BeginContext(3534, 9, true);
                     WriteLiteral("Leicester");
                     EndContext();
@@ -922,7 +932,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3586, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07572048", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07572336", async() => {
                     BeginContext(3612, 9, true);
                     WriteLiteral("Liverpool");
                     EndContext();
@@ -944,7 +954,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3664, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07573551", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07573839", async() => {
                     BeginContext(3687, 6, true);
                     WriteLiteral("London");
                     EndContext();
@@ -966,7 +976,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3736, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07575051", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07575339", async() => {
                     BeginContext(3763, 10, true);
                     WriteLiteral("Louisville");
                     EndContext();
@@ -988,7 +998,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3816, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07576556", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07576844", async() => {
                     BeginContext(3843, 10, true);
                     WriteLiteral("Manchester");
                     EndContext();
@@ -1010,7 +1020,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(3896, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07578061", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07578349", async() => {
                     BeginContext(3922, 9, true);
                     WriteLiteral("Sheffield");
                     EndContext();
@@ -1032,7 +1042,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                            </select>\r\n                        </div>\r\n                        <div class=\"tg-select\">\r\n                            <select>\r\n                                ");
                 EndContext();
                 BeginContext(4132, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07579733", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07580021", async() => {
                     BeginContext(4140, 10, true);
                     WriteLiteral("City/State");
                     EndContext();
@@ -1052,7 +1062,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(4193, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07581027", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07581315", async() => {
                     BeginContext(4201, 10, true);
                     WriteLiteral("Manchester");
                     EndContext();
@@ -1072,7 +1082,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(4254, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07582321", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07582609", async() => {
                     BeginContext(4262, 10, true);
                     WriteLiteral("Birmingham");
                     EndContext();
@@ -1092,7 +1102,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(4315, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07583615", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07583903", async() => {
                     BeginContext(4323, 8, true);
                     WriteLiteral("Bradford");
                     EndContext();
@@ -1158,7 +1168,7 @@ using Healz.Entities;
                         ");
             EndContext();
             BeginContext(5544, 10923, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07587256", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd5d07a2c01e76ebaada3030095bbae5e7fc07587544", async() => {
                 BeginContext(5591, 10869, true);
                 WriteLiteral(@"
                             <h3>Narrow Your Search</h3>
@@ -1357,7 +1367,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(16851, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075100798", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075101086", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1411,7 +1421,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(19251, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075104500", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075104788", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1465,7 +1475,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(21651, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075108202", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075108490", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1519,7 +1529,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(24051, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075111904", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075112192", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1573,7 +1583,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(26451, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075115606", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075115894", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1627,7 +1637,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(28851, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075119308", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075119596", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1681,7 +1691,7 @@ using Healz.Entities;
                                     <a href=""#"">");
             EndContext();
             BeginContext(31251, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075123010", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dbd5d07a2c01e76ebaada3030095bbae5e7fc075123298", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

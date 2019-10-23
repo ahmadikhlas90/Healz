@@ -28,8 +28,18 @@ using Healz.Entities;
 
 #line default
 #line hidden
+#line 4 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Models.UserProfile;
+
+#line default
+#line hidden
+#line 5 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Entities.BasicInfo;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"031aeda3ef1dabf2eb53dad349f9f80e94b5a534", @"/Views/Home/blogpostgrid.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c17f73524b13872924c54f2512a20ed5f49a1fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b634e72b02b176cc6987405462b0434bcd0c04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_blogpostgrid : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("tg-svginject"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -107,7 +117,7 @@ using Healz.Entities;
                                     ");
             EndContext();
             BeginContext(1710, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a5349446", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a5349734", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -134,7 +144,7 @@ using Healz.Entities;
                                     <figure class=""tg-postimg""><a href=""#"">");
             EndContext();
             BeginContext(2167, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53411168", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53411456", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -169,7 +179,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(3475, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53413732", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53414020", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -204,7 +214,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(4783, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53416296", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53416584", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -239,7 +249,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(6091, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53418860", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53419148", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -274,7 +284,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(7399, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53421424", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53421712", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -309,7 +319,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(8707, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53423988", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53424276", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -344,7 +354,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(10015, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53426553", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53426841", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -379,7 +389,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(11323, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53429119", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53429407", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -414,7 +424,7 @@ using Healz.Entities;
             WriteLiteral("           </div>\r\n                            <div class=\"col-md-4 col-sm-6 col-xs-12\">\r\n                                <article class=\"tg-post\">\r\n                                    <figure class=\"tg-postimg\"><a href=\"#\">");
             EndContext();
             BeginContext(12631, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53431686", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "031aeda3ef1dabf2eb53dad349f9f80e94b5a53431974", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

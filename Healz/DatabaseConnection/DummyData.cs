@@ -1,4 +1,5 @@
 ﻿using Healz.Entities;
+using Healz.Entities.BasicInfo;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Threading.Tasks;
@@ -49,7 +50,13 @@ namespace Healz.DatabaseConnection
                     PhoneNumber = "03064113590"
                 };
 
+                var us = new PatientInfo
+                {
+                    ApplicationUsersID=user.Id
+                };
                 var result = await userManager.CreateAsync(user);
+                context.Add(us);
+                context.SaveChanges();
                 if (result.Succeeded)
                 {
                     await userManager.AddPasswordAsync(user, password);

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,7 +25,10 @@ namespace Healz.Entities.BasicInfo
         public string ReligionName { get; set; }
         public string Occupation { get; set; }
         public string Designation { get; set; }
-        [Required]
-        public virtual ApplicationUser ApplicationUser { get; set; }
+        [Column(TypeName = "varchar(255)")]
+        public string ImageUrl { get; set; }
+
+        public string ApplicationUsersID { get; set; }
+        public virtual ApplicationUser ApplicationUsers{ get; set; }
     }
 }

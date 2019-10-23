@@ -107,8 +107,12 @@
                                         @if (SignInManager.IsSignedIn(User) && User.IsInRole("User"))
                                         {
                                             <li class="nav-item">
-                                                <a asp-action="Insights" asp-controller="User" class="nav-link">User Portal</a>
+                                                <a asp-action="Insights" asp-controller="User" class="nav-link" >User Portal</a>
                                             </li>
+                                        <li class="nav-item">
+                                                <a asp-action="UserProfile" asp-controller="User" class="nav-link" >Profile</a>
+                                            </li>
+
                                         }
                                         <li><a asp-action="HowItWorks" asp-controller="Home">How It Works?</a></li>
                                         <li class="tg-hasdropdown">

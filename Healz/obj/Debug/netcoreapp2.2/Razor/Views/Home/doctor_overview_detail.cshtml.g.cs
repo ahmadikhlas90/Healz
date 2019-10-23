@@ -28,8 +28,18 @@ using Healz.Entities;
 
 #line default
 #line hidden
+#line 4 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Models.UserProfile;
+
+#line default
+#line hidden
+#line 5 "C:\Users\user\Documents\MHealz\Healz\Healz\Views\_ViewImports.cshtml"
+using Healz.Entities.BasicInfo;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"08f8ba0189fcfaba27e247ff9a3ff8c761bb2887", @"/Views/Home/doctor_overview_detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c17f73524b13872924c54f2512a20ed5f49a1fd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b634e72b02b176cc6987405462b0434bcd0c04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_doctor_overview_detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("tg-formtheme tg-formsearch"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -133,12 +143,12 @@ using Healz.Entities;
                         ");
             EndContext();
             BeginContext(550, 1727, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288725713", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288726001", async() => {
                 BeginContext(591, 185, true);
                 WriteLiteral("\r\n                            <fieldset>\r\n                                <div class=\"tg-select\">\r\n                                    <select>\r\n                                        ");
                 EndContext();
                 BeginContext(776, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288726288", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288726576", async() => {
                     BeginContext(784, 7, true);
                     WriteLiteral("Doctors");
                     EndContext();
@@ -158,7 +168,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                        ");
                 EndContext();
                 BeginContext(842, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288727583", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288727871", async() => {
                     BeginContext(850, 7, true);
                     WriteLiteral("Doctors");
                     EndContext();
@@ -178,7 +188,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                    </select>\r\n                                </div>\r\n                                <div class=\"tg-select\">\r\n                                    <select>\r\n                                        ");
                 EndContext();
                 BeginContext(1098, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288729080", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288729368", async() => {
                     BeginContext(1106, 7, true);
                     WriteLiteral("Dentist");
                     EndContext();
@@ -198,7 +208,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                        ");
                 EndContext();
                 BeginContext(1164, 24, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288730378", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288730666", async() => {
                     BeginContext(1172, 7, true);
                     WriteLiteral("Dentist");
                     EndContext();
@@ -218,7 +228,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                    </select>\r\n                                </div>\r\n                                <div class=\"tg-select\">\r\n                                    <select>\r\n                                        ");
                 EndContext();
                 BeginContext(1420, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288731877", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288732165", async() => {
                     BeginContext(1428, 8, true);
                     WriteLiteral("Countery");
                     EndContext();
@@ -238,7 +248,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                        ");
                 EndContext();
                 BeginContext(1487, 31, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288733176", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288733464", async() => {
                     BeginContext(1495, 14, true);
                     WriteLiteral("United Kingdom");
                     EndContext();
@@ -258,7 +268,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                    </select>\r\n                                </div>\r\n                                <div class=\"tg-select\">\r\n                                    <select>\r\n                                        ");
                 EndContext();
                 BeginContext(1750, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288734683", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288734971", async() => {
                     BeginContext(1758, 10, true);
                     WriteLiteral("City/State");
                     EndContext();
@@ -278,7 +288,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                        ");
                 EndContext();
                 BeginContext(1819, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288735985", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288736273", async() => {
                     BeginContext(1827, 10, true);
                     WriteLiteral("Manchester");
                     EndContext();
@@ -341,7 +351,7 @@ using Healz.Entities;
                                         <a href=""#"">");
             EndContext();
             BeginContext(3174, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288739751", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288740039", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -456,7 +466,7 @@ using Healz.Entities;
                                                 <li><a class=""tg-tooltip tg-tooltipwhite"" href=""#"" data-toggle=""tooltip"" data-placement=""top"" title=""Badge Title"">");
             EndContext();
             BeginContext(11039, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288749156", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288749444", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -475,7 +485,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(11276, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288750596", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288750884", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -494,7 +504,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(11513, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288752036", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288752324", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -513,7 +523,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(11750, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288753476", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288753764", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -532,7 +542,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(11987, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288754916", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288755204", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -551,7 +561,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(12224, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288756356", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288756644", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -570,7 +580,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(12461, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288757796", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288758084", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -589,7 +599,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(12698, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288759236", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288759524", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -608,7 +618,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(12935, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288760677", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288760965", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -627,7 +637,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(13172, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288762118", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288762406", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -646,7 +656,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(13409, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288763559", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288763847", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -665,7 +675,7 @@ using Healz.Entities;
             WriteLiteral("</a></li>\r\n                                                <li><a class=\"tg-tooltip tg-tooltipwhite\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Badge Title\">");
             EndContext();
             BeginContext(13646, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288765000", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288765288", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -723,7 +733,7 @@ using Healz.Entities;
             WriteLiteral("                                      <a href=\"#\">");
             EndContext();
             BeginContext(16832, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288769569", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288769857", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -795,7 +805,7 @@ using Healz.Entities;
                                                                         <a href=""#"">");
             EndContext();
             BeginContext(21888, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288776001", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288776289", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1034,7 +1044,7 @@ using Healz.Entities;
                                                                     ");
             EndContext();
             BeginContext(40851, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288796945", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288797233", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1059,7 +1069,7 @@ using Healz.Entities;
                                                                     ");
             EndContext();
             BeginContext(41458, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288798748", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb288799036", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1084,7 +1094,7 @@ using Healz.Entities;
                                                                     ");
             EndContext();
             BeginContext(42065, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887100551", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887100839", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1209,7 +1219,7 @@ using Healz.Entities;
                                                             ");
             EndContext();
             BeginContext(51249, 545, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887111280", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887111568", async() => {
                 BeginContext(51298, 489, true);
                 WriteLiteral(@"
                                                                 <fieldset>
@@ -1249,7 +1259,7 @@ using Healz.Entities;
             WriteLiteral("                          ");
             EndContext();
             BeginContext(52844, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887114416", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887114704", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1357,7 +1367,7 @@ using Healz.Entities;
                                                                             ");
             EndContext();
             BeginContext(62056, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887125153", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887125441", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1468,7 +1478,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(71700, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887136354", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887136642", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1577,7 +1587,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(80964, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887147143", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887147431", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1686,7 +1696,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(90228, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887157932", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887158220", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1795,7 +1805,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(99492, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887168721", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887169009", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1904,7 +1914,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(108756, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887179511", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887179799", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2013,7 +2023,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(118020, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887190302", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887190590", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2122,7 +2132,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(127284, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887201093", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887201381", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2231,7 +2241,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(136548, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887211884", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887212172", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2340,7 +2350,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(145812, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887222675", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887222963", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2449,7 +2459,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(155076, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887233466", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887233754", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2558,7 +2568,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(164340, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887244257", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887244545", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2667,7 +2677,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(173604, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887255048", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887255336", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2776,7 +2786,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(182868, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887265839", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887266127", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2885,7 +2895,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(192132, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887276630", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887276918", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2994,7 +3004,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(201396, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887287421", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887287709", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3103,7 +3113,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(210660, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887298212", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887298500", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3212,7 +3222,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(219924, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887309003", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887309291", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3321,7 +3331,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(229188, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887319794", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887320082", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3430,7 +3440,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(238452, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887330585", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887330873", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3546,7 +3556,7 @@ using Healz.Entities;
                                                         ");
             EndContext();
             BeginContext(248142, 8393, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887341842", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887342130", async() => {
                 BeginContext(248190, 733, true);
                 WriteLiteral(@"
                                                             <fieldset>
@@ -3559,7 +3569,7 @@ using Healz.Entities;
                                                                                     ");
                 EndContext();
                 BeginContext(248923, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887342971", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887343259", async() => {
                     BeginContext(248931, 10, true);
                     WriteLiteral("15 Minutes");
                     EndContext();
@@ -3579,7 +3589,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                                    ");
                 EndContext();
                 BeginContext(249036, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887344324", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887344612", async() => {
                     BeginContext(249044, 10, true);
                     WriteLiteral("15 Minutes");
                     EndContext();
@@ -3599,7 +3609,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                                                                    ");
                 EndContext();
                 BeginContext(249149, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887345677", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887345965", async() => {
                     BeginContext(249157, 10, true);
                     WriteLiteral("15 Minutes");
                     EndContext();
@@ -3737,7 +3747,7 @@ using Healz.Entities;
                                                                         <a href=""#"">");
             EndContext();
             BeginContext(258506, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887357832", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887358120", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3809,7 +3819,7 @@ using Healz.Entities;
                                                                         <a href=""#"">");
             EndContext();
             BeginContext(263611, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887364320", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887364608", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3891,7 +3901,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(269381, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887371515", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887371803", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3915,7 +3925,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(269837, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887373164", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887373452", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3939,7 +3949,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(270293, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887374813", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887375101", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3963,7 +3973,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(270749, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887376462", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887376750", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -3987,7 +3997,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(271205, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887378111", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887378399", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4011,7 +4021,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(271661, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887379760", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887380048", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4035,7 +4045,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(272117, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887381409", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887381697", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4059,7 +4069,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(272573, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887383058", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887383346", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4083,7 +4093,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(273029, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887384707", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887384995", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4107,7 +4117,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(273485, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887386356", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887386644", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4131,7 +4141,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(273941, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887388005", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887388293", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4155,7 +4165,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(274397, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887389654", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887389942", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4179,7 +4189,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(274853, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887391303", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887391591", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4203,7 +4213,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(275309, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887392952", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887393240", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4227,7 +4237,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(275765, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887394601", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887394889", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4251,7 +4261,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(276221, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887396250", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887396538", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4275,7 +4285,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(276677, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887397899", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887398187", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4299,7 +4309,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(277133, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887399548", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887399836", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4323,7 +4333,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(277589, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887401197", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887401485", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4347,7 +4357,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(278045, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887402846", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887403134", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4373,7 +4383,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(278704, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887404702", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887404990", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4397,7 +4407,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(279160, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887406351", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887406639", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4421,7 +4431,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(279616, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887408000", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887408288", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4445,7 +4455,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(280072, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887409649", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887409937", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4469,7 +4479,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(280528, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887411298", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887411586", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4493,7 +4503,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(280984, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887412947", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887413235", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4517,7 +4527,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(281440, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887414596", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887414884", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4541,7 +4551,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(281896, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887416245", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887416533", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4565,7 +4575,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(282352, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887417894", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887418182", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4589,7 +4599,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(282808, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887419543", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887419831", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4613,7 +4623,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(283264, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887421192", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887421480", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4637,7 +4647,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(283720, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887422841", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887423129", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4661,7 +4671,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(284176, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887424490", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887424778", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4685,7 +4695,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(284632, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887426139", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887426427", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4709,7 +4719,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(285088, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887427788", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887428076", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4733,7 +4743,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(285544, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887429437", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887429725", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4757,7 +4767,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(286000, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887431086", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887431374", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4781,7 +4791,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(286456, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887432735", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887433023", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4805,7 +4815,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(286912, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887434384", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887434672", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4829,7 +4839,7 @@ using Healz.Entities;
                                                                         ");
             EndContext();
             BeginContext(287368, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887436033", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887436321", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4860,7 +4870,7 @@ using Healz.Entities;
                                                         ");
             EndContext();
             BeginContext(288330, 1706, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887438198", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887438486", async() => {
                 BeginContext(288378, 1651, true);
                 WriteLiteral(@"
                                                             <fieldset>
@@ -4906,7 +4916,7 @@ using Healz.Entities;
                                                             ");
             EndContext();
             BeginContext(290326, 545, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887441747", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887442035", async() => {
                 BeginContext(290375, 489, true);
                 WriteLiteral(@"
                                                                 <fieldset>
@@ -4946,7 +4956,7 @@ using Healz.Entities;
             WriteLiteral("                        ");
             EndContext();
             BeginContext(291919, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887444884", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887445172", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5007,7 +5017,7 @@ using Healz.Entities;
                                                                             ");
             EndContext();
             BeginContext(296057, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887450363", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887450651", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5069,7 +5079,7 @@ using Healz.Entities;
             WriteLiteral("                                                     <div class=\"tg-patientfeedbackbox\">\r\n                                                                    <figure>\r\n                                                                        ");
             EndContext();
             BeginContext(300459, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887456141", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887456429", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5132,7 +5142,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(304649, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887461703", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887461991", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5195,7 +5205,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(308839, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887467265", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887467553", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5258,7 +5268,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(313029, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887472827", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887473115", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5321,7 +5331,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(317219, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887478389", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887478677", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5384,7 +5394,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(321409, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887483951", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887484239", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5447,7 +5457,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(325599, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887489513", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887489801", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5510,7 +5520,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(329789, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887495075", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887495363", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5573,7 +5583,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(333979, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887500637", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887500925", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5636,7 +5646,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(338169, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887506199", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887506487", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5699,7 +5709,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(342359, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887511761", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887512049", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5762,7 +5772,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(346549, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887517323", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887517611", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5825,7 +5835,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(350739, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887522885", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887523173", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5888,7 +5898,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(354929, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887528447", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887528735", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -5951,7 +5961,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(359119, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887534009", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887534297", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6014,7 +6024,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(363309, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887539571", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887539859", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6077,7 +6087,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(367499, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887545133", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887545421", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6140,7 +6150,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(371689, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887550695", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887550983", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6203,7 +6213,7 @@ using Healz.Entities;
             WriteLiteral("                            ");
             EndContext();
             BeginContext(375879, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887556257", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887556545", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6301,7 +6311,7 @@ using Healz.Entities;
             WriteLiteral("                                         <li>\r\n                                                <figure><a href=\"#\">");
             EndContext();
             BeginContext(382204, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887564066", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887564354", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6327,7 +6337,7 @@ using Healz.Entities;
                                                 <figure><a href=""#"">");
             EndContext();
             BeginContext(382817, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887565881", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887566169", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6353,7 +6363,7 @@ using Healz.Entities;
                                                 <figure><a href=""#"">");
             EndContext();
             BeginContext(383407, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887567673", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887567961", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6379,7 +6389,7 @@ using Healz.Entities;
                                                 <figure><a href=""#"">");
             EndContext();
             BeginContext(384000, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887569468", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887569756", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6405,7 +6415,7 @@ using Healz.Entities;
                                                 <figure><a href=""#"">");
             EndContext();
             BeginContext(384589, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887571259", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887571547", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6431,7 +6441,7 @@ using Healz.Entities;
                                                 <figure><a href=""#"">");
             EndContext();
             BeginContext(385188, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887573060", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887573348", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6506,7 +6516,7 @@ using Healz.Entities;
                                         ");
             EndContext();
             BeginContext(388595, 590, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887577797", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887578085", async() => {
                 BeginContext(388640, 538, true);
                 WriteLiteral(@"
                                             <fieldset>
@@ -6540,7 +6550,7 @@ using Healz.Entities;
                                         <figure><a href=""#"">");
             EndContext();
             BeginContext(389452, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887580162", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887580450", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -6584,7 +6594,7 @@ using Healz.Entities;
             WriteLiteral("         <h2>Book Your Appointment!</h2>\r\n                ");
             EndContext();
             BeginContext(390601, 15810, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887582563", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887582851", async() => {
                 BeginContext(390638, 2206, true);
                 WriteLiteral(@"
                     <ul class=""tg-formprogressbar"">
@@ -6622,7 +6632,7 @@ using Healz.Entities;
                 WriteLiteral(">\r\n                                    <div class=\"tg-select\">\r\n                                        <select>\r\n                                            ");
                 EndContext();
                 BeginContext(392844, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887585291", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887585579", async() => {
                     BeginContext(392861, 16, true);
                     WriteLiteral("His/Her Relation");
                     EndContext();
@@ -6644,7 +6654,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(392932, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887586821", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887587109", async() => {
                     BeginContext(392949, 16, true);
                     WriteLiteral("His/Her Relation");
                     EndContext();
@@ -6666,7 +6676,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(393020, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887588351", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887588639", async() => {
                     BeginContext(393037, 16, true);
                     WriteLiteral("His/Her Relation");
                     EndContext();
@@ -6697,7 +6707,7 @@ using Healz.Entities;
                                             ");
                 EndContext();
                 BeginContext(393527, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887590306", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887590594", async() => {
                     BeginContext(393544, 16, true);
                     WriteLiteral("Where to visit:*");
                     EndContext();
@@ -6719,7 +6729,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(393615, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887591836", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887592124", async() => {
                     BeginContext(393632, 16, true);
                     WriteLiteral("Where to visit:*");
                     EndContext();
@@ -6741,7 +6751,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(393703, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887593366", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887593654", async() => {
                     BeginContext(393720, 16, true);
                     WriteLiteral("Where to visit:*");
                     EndContext();
@@ -6772,7 +6782,7 @@ using Healz.Entities;
                                             ");
                 EndContext();
                 BeginContext(394210, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887595321", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887595609", async() => {
                     BeginContext(394227, 18, true);
                     WriteLiteral("Appointment Type:*");
                     EndContext();
@@ -6794,7 +6804,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(394300, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887596853", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887597141", async() => {
                     BeginContext(394317, 18, true);
                     WriteLiteral("Appointment Type:*");
                     EndContext();
@@ -6816,7 +6826,7 @@ using Healz.Entities;
                 WriteLiteral("\r\n                                            ");
                 EndContext();
                 BeginContext(394390, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887598385", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887598673", async() => {
                     BeginContext(394407, 18, true);
                     WriteLiteral("Appointment Type:*");
                     EndContext();
@@ -6847,7 +6857,7 @@ using Healz.Entities;
                                             ");
                 EndContext();
                 BeginContext(394899, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887600342", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887600630", async() => {
                     BeginContext(394916, 18, true);
                     WriteLiteral("Reason for visit:*");
                     EndContext();
@@ -7024,7 +7034,7 @@ using Healz.Entities;
                             <strong class=""tg-logo""><a href=""#"">");
                 EndContext();
                 BeginContext(405488, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887613053", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "08f8ba0189fcfaba27e247ff9a3ff8c761bb2887613341", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
