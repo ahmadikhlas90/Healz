@@ -112,7 +112,7 @@ namespace Healz.Controllers
             }
             return View(model);
         }
-        [HttpPost]
+        //[HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();

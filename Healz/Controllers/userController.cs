@@ -50,111 +50,107 @@ namespace Healz.Controllers
         [HttpGet]
         public async Task<IActionResult> UserProfile()
         {
-            var user = await GetCurrentUserAsync();
-            UserProfileViewModel patientInfo = new UserProfileViewModel();
-            string v1 = patientInfo.ApplicationUsersID = user.Id;
-
-            PatientInfo found = null;
-            found = (from p in db.PatientInfo
-                     where p.ApplicationUsersID == v1
-                     select p).FirstOrDefault();
-            ViewBag.bd = found;
+            await ProfileCheck();
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> UserProfile(UserProfileViewModel model)
         {
             var user = await GetCurrentUserAsync();
-            //success
-            if (!ModelState.IsValid)
+            string uniqueFileName = null;
+            if (model.photo != null)
             {
-                string uniqueFileName = null;
-                if (model.photo != null)
-                {
-                    string uploadsfolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
-                    //for unique id 
-                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.photo.FileName;
-                    string filepath = Path.Combine(uploadsfolder, uniqueFileName);
-                    model.photo.CopyTo(new FileStream(filepath, FileMode.Create));
-                }
-                PatientInfo n = new PatientInfo
-                {
-                    ZipCode = model.ZipCode,
-                    Designation = model.Designation,
-                    MailingAddress = model.MailingAddress,
-                    MinitelStatus = model.MinitelStatus,
-                    Occupation = model.Occupation,
-                    MotherName = model.MotherName,
-                    PhysicalAddress = model.PhysicalAddress,
-                    ReligionName = model.ReligionName,
-                    SpouseName = model.SpouseName,
-                    SufferingFrom = model.SufferingFrom,
-                    ImageUrl = uniqueFileName,
-                    Cast=model.Cast,
-                    ApplicationUsersID=user?.Id
-                };
-
-                repository.UpdateProfile(user.Id, n);
-                return RedirectToAction("Insights");
-
-                //db.Add(n);
-                //db.SaveChanges();
-                //return RedirectToAction("Index", "Home");
+                string uploadsfolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                //for unique id 
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.photo.FileName;
+                string filepath = Path.Combine(uploadsfolder, uniqueFileName);
+                model.photo.CopyTo(new FileStream(filepath, FileMode.Create));
             }
+            PatientInfo n = new PatientInfo
+            {
+                ZipCode = model.ZipCode,
+                Designation = model.Designation,
+                MailingAddress = model.MailingAddress,
+                MinitelStatus = model.MinitelStatus,
+                Occupation = model.Occupation,
+                MotherName = model.MotherName,
+                PhysicalAddress = model.PhysicalAddress,
+                ReligionName = model.ReligionName,
+                SpouseName = model.SpouseName,
+                SufferingFrom = model.SufferingFrom,
+                ImageUrl = uniqueFileName,
+                Cast = model.Cast,
+                ApplicationUsersID = user?.Id
+            };
+            repository.UpdateProfile(user.Id, n);
+            return RedirectToAction("Insights");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Insights()
+        {
+            await ProfileCheck();
             return View();
         }
 
-
-        public IActionResult Insights()
+        [HttpGet]
+        public async Task<IActionResult> InsightsTwo()
         {
+            await ProfileCheck();
             return View();
         }
-        public IActionResult InsightsTwo()
+        public async Task<IActionResult> ProfileSettings()
         {
-            return View();
-        }
-        public IActionResult ProfileSettings()
-        {
-            return View();
-        }
-
-        public IActionResult JobLocations()
-        {
+            await ProfileCheck();
             return View();
         }
 
-        public IActionResult PrivateMasseges()
+        public async Task<IActionResult> JobLocations()
         {
+            await ProfileCheck();
             return View();
         }
 
-        public IActionResult Appointments()
+        public async Task<IActionResult> PrivateMasseges()
         {
-            return View();
-        }
-        public IActionResult Appoinmentsetting()
-        {
+            await ProfileCheck();
             return View();
         }
 
-        public IActionResult PrivacySetting()
+        public async Task<IActionResult> Appointments()
         {
+            await ProfileCheck();
             return View();
         }
-        public IActionResult securitysettings()
+        public async Task<IActionResult> Appoinmentsetting()
         {
+            await ProfileCheck();
             return View();
         }
-        public IActionResult upgradepackage()
+
+        public async Task<IActionResult> PrivacySetting()
         {
+            await ProfileCheck();
             return View();
         }
-        public IActionResult invoices()
+        public async Task<IActionResult> securitysettings()
         {
+            await ProfileCheck();
             return View();
         }
-        public IActionResult favoritlisting()
+        public async Task<IActionResult> upgradepackage()
         {
+            await ProfileCheck();
+            return View();
+        }
+        public async Task<IActionResult> invoices()
+        {
+            await ProfileCheck();
+            return View();
+        }
+        public async Task<IActionResult> favoritlisting()
+        {
+            await ProfileCheck();
             return View();
         }
 
@@ -203,8 +199,18 @@ namespace Healz.Controllers
         }
 
 
-
-
-        
+        //for profile get funcationality 
+        private async Task<IActionResult> ProfileCheck()
+        {
+            var user = await GetCurrentUserAsync();
+            UserProfileViewModel patientInfo = new UserProfileViewModel();
+            string v1 = patientInfo.ApplicationUsersID = user.Id;
+            PatientInfo found = null;
+            found = (from p in db.PatientInfo
+                     where p.ApplicationUsersID == v1
+                     select p).FirstOrDefault();
+            ViewBag.bd = found;
+            return View();
+        }
     }
 }

@@ -29,18 +29,54 @@ namespace Heaz.Repository.Implimentation
                      select p).FirstOrDefault();
             if (!string.IsNullOrEmpty(neighborhood.ApplicationUsersID))
             {
-                found.MailingAddress = neighborhood.MailingAddress;
-                found.PhysicalAddress = neighborhood.PhysicalAddress;
-                found.ReligionName = neighborhood.ReligionName;
-                found.SpouseName = neighborhood.SpouseName;
-                found.ZipCode = neighborhood.ZipCode;
-                found.SufferingFrom = neighborhood.SufferingFrom;
-                found.Occupation = neighborhood.Occupation;
-                found.MinitelStatus = neighborhood.MinitelStatus;
-                found.MotherName = neighborhood.MotherName;
-                found.Cast = neighborhood.Cast;
-                found.Designation = neighborhood.Designation;
-                found.SufferingFrom = neighborhood.SufferingFrom;
+                if (!string.IsNullOrEmpty(neighborhood.MailingAddress))
+                {
+                    found.MailingAddress = neighborhood.MailingAddress;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.PhysicalAddress))
+                {
+                    found.PhysicalAddress = neighborhood.PhysicalAddress;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.ReligionName))
+                {
+                    found.ReligionName = neighborhood.ReligionName;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.SpouseName))
+                {
+                    found.SpouseName = neighborhood.SpouseName;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.ZipCode))
+                {
+                    found.ZipCode = neighborhood.ZipCode;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.SufferingFrom))
+                {
+                    found.SufferingFrom = neighborhood.SufferingFrom;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.Occupation))
+                {
+                    found.Occupation = neighborhood.Occupation;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.MinitelStatus))
+                {
+                    found.MinitelStatus = neighborhood.MinitelStatus;
+                }  
+                if (!string.IsNullOrEmpty(neighborhood.MotherName))
+                {
+                    found.MotherName = neighborhood.MotherName;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.Cast))
+                {
+                    found.Cast = neighborhood.Cast;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.Designation))
+                {
+                    found.Designation = neighborhood.Designation;
+                }
+                if (!string.IsNullOrEmpty(neighborhood.SufferingFrom))
+                {
+                    found.SufferingFrom = neighborhood.SufferingFrom;
+                }
             }
 
             if (neighborhood.ImageUrl != null)
