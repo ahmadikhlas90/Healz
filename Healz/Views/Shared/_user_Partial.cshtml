@@ -1,10 +1,6 @@
-﻿
+﻿@model UserProfileViewModel
 @{
-    var v=(PatientInfo)ViewBag.bd;
-
-    PatientInfo patient = new PatientInfo();
-
-    var photoPaths = "/Images/" +(v.ImageUrl ?? "user.png");
+     
     ViewData["Title"] = "_user_Partial";
 }
 
@@ -13,7 +9,7 @@
 <div class="tg-widgetdashboard">
     <div class="tg-widgetprofile">
         <figure class="tg-directpostimg">
-            <a href="#"><img src="@photoPaths" alt="image description"></a>
+            <a href="#"><img src="~/images/thumbnails/img-20.jpg" alt="image description"></a>
             <figcaption>
                 <a class="tg-usericon tg-iconfeatured" href="#">
                     <em class="tg-usericonholder">
@@ -30,7 +26,7 @@
             </figcaption>
         </figure>
         <div class="tg-directposthead">
-            <h3><a href="#">@v.ApplicationUsers.FirstName @v.ApplicationUsers.LastName</a></h3>
+            <h3><a href="#">Dr. Steve Northrop</a></h3>
             <div class="tg-subjects">MDS - Paedodontics &amp; Preventive Dentistry</div>
             <ul class="tg-metadata">
                 <li><span class="tg-stars"><span></span></span></li>
@@ -114,7 +110,7 @@
                 </a>
             </li>
             <li>
-                <a asp-action="Logout" asp-controller="Account">
+                <a href="#">
                     <i class="fa fa-sign-out"></i>
                     <span>Logout</span>
                 </a>

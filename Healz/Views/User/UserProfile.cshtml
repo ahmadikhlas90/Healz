@@ -4,37 +4,34 @@
     var v=(PatientInfo)ViewBag.bd;
 
     PatientInfo patient = new PatientInfo();
-
-    var photoPaths = "/Images/" +(v.ImageUrl ?? "user.png");
+    //var photoPaths= "    ~/images/"+ (patient.ImageUrl ?? "user.png");
 }
 
 <div class="container">
         <div class="card">
             <div class="card-header"><h4>Profile Update</h4></div>
-            <div class="card-title center-block text-danger"><span>Please Carefully Fill Complete Form</span></div>
+            <div class="card-title center-block"><span>Please Fill Complete Form</span></div>
             <div class="card-body ">
                 <form id="fffm" asp-action="Profile" asp-controller="Admin" class="p-3" enctype="multipart/form-data">
                     <div class="form-group">
-                        <p>@v.ApplicationUsers.FirstName @v.ApplicationUsers.LastName</p>
+                        <label class="card-text control-label p-2" ><strong style="font-family:Arial;font-size:40px;">@v.ApplicationUsers.FirstName @v.ApplicationUsers.LastName</strong></label>
                         <div class="custom-file">
-
-                            @*<img src="@Url.Content("~/images/user.png")" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" />*@
-                            @*<img src="@photoPaths" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" />*@
-                            @if (string.IsNullOrEmpty(patient.ImageUrl))
-                            {
-                                <img src="@photoPaths" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-lg" asp-append-version="true" />
-                            }
+                            @*@if (string.IsNullOrEmpty(currentUser.ImageUrl))
+                            {*@
+                                <img src="@Url.Content("~/images/user.png")" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" />
+                            @*}
                             else
                             {
-                                //var photopath = "~/images/" + (patient.ImageUrl ?? "user.png");
-                                <img src="@Url.Content("~/images/user.png")" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" asp-append-version="true" />
-                            }
+                                var photopath = "~/images/" + (patient.ImageUrl ?? "user.png");
+                                <img src="@photopath" alt="..." width="200" class="mr-5 rounded-circle img-thumbnail shadow-sm" asp-append-version="true" />
+                            }*@
+
                         </div>
                     </div>
                   
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
                     <div class="col-12" style="margin-top:100px">
+                        
                         @if (v.SpouseName != null)
                         {
                             <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
@@ -74,6 +71,7 @@
                         </div>
                         }
                     </div>
+
 
                     <div class="col-12">
                         @if (v.ReligionName != null)
@@ -115,7 +113,6 @@
                             </div>
                         }
                     </div>
-
                     <div class="col-12">
                         @if (v.Occupation != null)
                         {
@@ -196,7 +193,6 @@
                         </div>
                         }
                     </div>
-
                     <div class="col-12">
                         @if (v.PhysicalAddress != null)
                         {
@@ -238,6 +234,7 @@
                         }
                     </div>
 
+                
                     <div class="col-12">
                         @if (v.ApplicationUsers.FirstName != null)
                         {
@@ -279,10 +276,12 @@
                         }
                     </div>
 
+
                     <div class="col-12">
                         <div class="form-group tg-formgroup" hidden>
                             <label asp-for="ApplicationUsersID" hidden></label>
                             <input asp-for="ApplicationUsersID" class="form-control" hidden />
+                            <span asp-validation-for="ApplicationUsers.ID" class="text-danger" hidden></span>
                         </div>
 
                         @if (v.SufferingFrom != null)
@@ -317,12 +316,10 @@
                         {
                             <div class="col-md-6 col-sm-6 col-xs-12 tg-columnpadding">
                                 <div class="form-group tg-formgroup">
-                                    
                                     <label asp-for="photo" class="control-label"></label>
                                     <div class="custom-file">
                                         <input asp-for="photo" type="file" id="photo" name="photo" class="form-control custom-file-input" />
                                         <label id="datadf" class="custom-file-label">Choose File.....</label>
-                                        <span asp-validation-for="photo" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
